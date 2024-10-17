@@ -179,7 +179,8 @@ CPU 接口提供一个处理器连接到 GIC 的接口。每一个 CPU 接口都
 
 主要以以下4中case进行讨论，其中case4涉及vCPU调度，其他情况不涉及调度：
 
-![image-20241017010739834](D:\Desktop\Note\通用中断控制器\assets\image-20241017010739834.png)
+![image-20241017010739834](https://github.com/user-attachments/assets/aace25d9-32a1-420d-88fd-56dde06352d3)
+
 
 ### VGIC Distributor设计
 
@@ -359,7 +360,7 @@ PPI通常用于管理特定于处理器的外设中断。在GICv2中，每个核
 
 - **状态管理**：Hypervisor在处理完PPI中断后，负责清理中断状态和相关的寄存器，确保后续中断请求的正确性。
 
-![image-20241010140630802](D:\Desktop\Note\通用中断控制器\assets\image-20241010140630802-1729101672392-1.png)
+![image-20241010140630802](https://github.com/user-attachments/assets/f13c3dd8-77ba-439f-8934-4790980af763)
 
 ### SPI 共享外设中断
 
